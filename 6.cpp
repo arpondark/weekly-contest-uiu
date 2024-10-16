@@ -1,26 +1,19 @@
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-void solve(){
-    int l , r ;
-    cin >> l >> r ;
-    int x = l , y = 2 * l ;
-    if(y > r){
-        cout << - 1 << " " << -1 << endl ;
-    }
-    else{
-        cout << x << " " << y << endl ;
-    }
-}
+int main()
+{
+    int t;
+    cin >> t;
 
-int main(){
-    ios_base::sync_with_stdio(false);
+    while (t--)
+    {
+        int l, r;
+        cin >> l >> r;
 
-    int testcase ;
-    cin >> testcase ;
-    for(int i = 0 ; i < testcase ; i ++){
-        solve();
+        if (2 * l > r)
+            cout << "-1 -1\n";
+        else
+            cout << l << " " << 2 *l <<endl;
     }
-
-    return 0 ;
 }
